@@ -1,0 +1,28 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "Quiz App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malte1983/quiz-app.git"
+  },
+  "keywords": [
+    "quiz",
+    "questions",
+    "game"
+  ],
+  "author": "Malte Scherdin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Malte1983/quiz-app/issues"
+  },
+  "homepage": "https://github.com/Malte1983/quiz-app#readme",
+  "dependencies": {
+    "vite": "^2.5.1"
+  }
+}
