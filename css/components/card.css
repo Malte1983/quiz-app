@@ -6,6 +6,7 @@
   padding: 20px;
   border-radius: 8px;
   position: relative;
+  background-color: rgba(95, 158, 160, 0.235);
 }
 
 .card__bookmark {
@@ -35,7 +36,4 @@
   height: 25px;
   width: 120px;
   text-align: center;
-
-  top: 50px;
-  right: 400px;
 }
