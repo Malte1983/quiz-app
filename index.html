@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-app</title>
+    <script src="/main.js" defer></script>
   </head>
   <body>
     <header class="header__container">
@@ -13,7 +14,7 @@
         <img class="logo" src="img/logo2.png" width="550" alt="" />
       </h1>
     </header>
-    <main>
+    <main class="main" id="questions">
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
@@ -83,16 +84,125 @@
         </ul>
       </section>
     </main>
+    <main class="main main--hidden" id="bookmarks">
+      <section class="card">
+        <button class="card__bookmark"></button>
+        <h2 class="card__question">Frage</h2>
+        <button class="card__button">Antwort anzeigen</button>
+        <p class="card__answer card__answer--hidden" hidden>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
+          itaque consequuntur deserunt inventore amet repellat labore quaerat
+          est facere natus, explicabo eum velit quidem.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">first</li>
+          <li class="tags__item">first</li>
+          <li class="tags__item">first</li>
+          <li class="tags__item">first</li>
+          <li class="tags__item">first</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button class="card__bookmark"></button>
+        <h2 class="card__question">Frage</h2>
+        <button class="card__button">Antwort anzeigen</button>
+        <p class="card__answer card__answer--hidden" hidden>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
+          itaque consequuntur deserunt inventore amet repellat labore quaerat
+          est facere natus, explicabo eum velit quidem.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">first</li>
+          <li class="tags__item">second</li>
+          <li class="tags__item">third</li>
+          <li class="tags__item">third</li>
+          <li class="tags__item">third</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button class="card__bookmark"></button>
+        <h2 class="card__question">Frage</h2>
+        <button class="card__button">Antwort anzeigen</button>
+        <p class="card__answer card__answer--hidden" hidden>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
+          itaque consequuntur deserunt inventore amet repellat labore quaerat
+          est facere natus, explicabo eum velit quidem.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">first</li>
+          <li class="tags__item">second</li>
+          <li class="tags__item">third</li>
+          <li class="tags__item">third</li>
+          <li class="tags__item">third</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button class="card__bookmark"></button>
+        <h2 class="card__question">Frage</h2>
+        <button class="card__button">Antwort anzeigen</button>
+        <p class="card__answer card__answer--hidden" hidden>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
+          itaque consequuntur deserunt inventore amet repellat labore quaerat
+          est facere natus, explicabo eum velit quidem.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">first</li>
+          <li class="tags__item">second</li>
+          <li class="tags__item">third</li>
+          <li class="tags__item">third</li>
+          <li class="tags__item">third</li>
+        </ul>
+      </section>
+    </main>
+    <main class="main main--hidden main__container" id="create">
+      <section class="form__flex">
+        <h2 class="title__create">Erstelle deine eigene Quizfrage</h2>
+
+        <form class="form">
+          <label class="label__question">Frage: </label>
+          <textarea
+            class="text_area"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Deine Frage hier eingeben:"
+          ></textarea>
+          <label class="label__question">Antwort: </label>
+          <textarea
+            class="text_area"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Deine Antwort hier eingeben:"
+          ></textarea>
+          <label class="add__tag">Add Tags</label>
+          <div class tags__input>
+            <input class="tag1" type="text" placeholder="tag 1" />
+            <input class="tag1" type="text" placeholder="tag 2" />
+            <input class="tag1" type="text" placeholder="tag 3" />
+            <input class="tag1" type="text" placeholder="tag 4" />
+          </div>
+
+          <button class="btn__submit">Eintragen</button>
+        </form>
+      </section>
+    </main>
     <footer class="footer">
       <nav class="footer__nav">
-        <a href="./index.html"><img src="/img/Home.svg" width="70" alt="" /></a>
-        <a href="./bookmark.html"
-          ><img src="/img/bookmark.svg" width="45" alt=""
-        /></a>
-        <a href="#"><img src="/img/book-plus.svg" width="70" alt="" /></a>
-        <a href="#"
-          ><img src="/img/human-male-board.svg" width="70" alt=""
-        /></a>
+        <button id="btn-home">
+          <img src="/img/Home.svg" width="70" alt="" />
+        </button>
+        <button id="btn-bookmark">
+          <img src="/img/bookmark.svg" width="45" alt="" />
+        </button>
+        <button id="btn-create">
+          <img src="/img/book-plus.svg" width="70" alt="" />
+        </button>
+        <button href="#">
+          <img src="/img/human-male-board.svg" width="70" alt="" />
+        </button>
       </nav>
     </footer>
   </body>
