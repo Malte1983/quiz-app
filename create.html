@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-app</title>
+  </head>
+  <body>
+    <header class="header__container">
+      <h1 class="header__title">
+        <img class="logo" src="img/logo2.png" width="550" alt="Ein Quiz" />
+      </h1>
+    </header>
+    <main class="main__container">
+      <section class="form__flex">
+        <h2 class="title__create">Erstelle deine eigene Quizfrage</h2>
+
+        <form class="form">
+          <label class="label__question">Frage: </label>
+          <textarea
+            class="text_area"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Deine Frage hier eingeben:"
+          ></textarea>
+          <label class="label__question">Antwort: </label>
+          <textarea
+            class="text_area"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Deine Antwort hier eingeben:"
+          ></textarea>
+          <label class="add__tag">Add Tags</label>
+          <div class tags__input>
+            <input class="tag1" type="text" placeholder="tag 1" />
+            <input class="tag1" type="text" placeholder="tag 2" />
+            <input class="tag1" type="text" placeholder="tag 3" />
+            <input class="tag1" type="text" placeholder="tag 4" />
+          </div>
+
+          <button class="btn__submit">Eintragen</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="./index.html"><img src="/img/Home.svg" width="70" alt="" /></a>
+        <a href="./bookmark.html"
+          ><img src="/img/bookmark.svg" width="45" alt=""
+        /></a>
+        <a href="./create.html"
+          ><img src="/img/book-plus.svg" width="70" alt=""
+        /></a>
+        <a href="#"
+          ><img src="/img/human-male-board.svg" width="70" alt=""
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
