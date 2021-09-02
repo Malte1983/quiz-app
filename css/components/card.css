@@ -26,6 +26,23 @@
   background-color: transparent;
 }
 
+.card__bookmark__checked {
+  position: absolute;
+  top: -12px;
+  right: 25px;
+  padding: 0;
+
+  height: 60px;
+
+  border-color: rgb(243, 26, 26);
+  border-style: solid 1px;
+  border-width: 20px;
+
+  border-bottom-color: transparent;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 .card__question {
   align-self: flex-start;
   margin-bottom: 10px;
@@ -36,4 +53,8 @@
   height: 25px;
   width: 120px;
   text-align: center;
+}
+
+.card__answer--hidden {
+  display: none;
 }
