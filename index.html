@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-app</title>
-    <script src="/main.js" defer></script>
   </head>
   <body>
     <header class="header__container">
@@ -18,8 +17,12 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
-        <button class="card__button">Antwort anzeigen</button>
-        <p class="card__answer card__answer--hidden" hidden>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
+        <button id="btn_answer1" class="card__button">Antwort anzeigen</button>
+        <p id="answer1" class="card__answer card__answer--hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
           itaque consequuntur deserunt inventore amet repellat labore quaerat
           est facere natus, explicabo eum velit quidem.
@@ -35,8 +38,12 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
         <button class="card__button">Antwort anzeigen</button>
-        <p class="card__answer card__answer--hidden" hidden>
+        <p class="card__answer card__answer--hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
           itaque consequuntur deserunt inventore amet repellat labore quaerat
           est facere natus, explicabo eum velit quidem.
@@ -52,8 +59,12 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
         <button class="card__button">Antwort anzeigen</button>
-        <p class="card__answer card__answer--hidden" hidden>
+        <p class="card__answer card__answer--hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
           itaque consequuntur deserunt inventore amet repellat labore quaerat
           est facere natus, explicabo eum velit quidem.
@@ -69,8 +80,12 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
         <button class="card__button">Antwort anzeigen</button>
-        <p class="card__answer card__answer--hidden" hidden>
+        <p class="card__answer card__answer--hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
           itaque consequuntur deserunt inventore amet repellat labore quaerat
           est facere natus, explicabo eum velit quidem.
@@ -88,8 +103,12 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
         <button class="card__button">Antwort anzeigen</button>
-        <p class="card__answer card__answer--hidden" hidden>
+        <p class="card__answer card__answer--hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
           itaque consequuntur deserunt inventore amet repellat labore quaerat
           est facere natus, explicabo eum velit quidem.
@@ -105,8 +124,12 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
         <button class="card__button">Antwort anzeigen</button>
-        <p class="card__answer card__answer--hidden" hidden>
+        <p class="card__answer card__answer--hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
           itaque consequuntur deserunt inventore amet repellat labore quaerat
           est facere natus, explicabo eum velit quidem.
@@ -122,10 +145,14 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
         <button id="showcardbutton" class="card__button">
           Antwort anzeigen
         </button>
-        <p id="showcard" class="card__answer card__answer--hidden" hidden>
+        <p id="showcard" class="card__answer card__answer--hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
           itaque consequuntur deserunt inventore amet repellat labore quaerat
           est facere natus, explicabo eum velit quidem.
@@ -141,6 +168,10 @@
       <section class="card">
         <button class="card__bookmark"></button>
         <h2 class="card__question">Frage</h2>
+        <p class="question__ptag">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          voluptatem ex incidunt ipsum eveniet accusantium.
+        </p>
         <button class="card__button">Antwort anzeigen</button>
         <p class="card__answer card__answer--hidden" hidden>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum
@@ -187,25 +218,33 @@
             <input class="tag1" type="text" placeholder="tag 4" />
           </div>
 
-          <button class="btn__submit">Eintragen</button>
+          <button type="button" class="btn__submit">Eintragen</button>
         </form>
       </section>
     </main>
     <footer class="footer">
       <nav class="footer__nav">
-        <button id="btn-home">
-          <img src="/img/Home.svg" width="70" alt="" />
+        <button class="nav__buttons" id="btn-home">
+          <img src="/img/Home.svg" width="60" alt="" />
         </button>
-        <button id="btn-bookmark">
-          <img src="/img/bookmark.svg" width="45" alt="" />
+        <button class="nav__buttons" id="btn-bookmark">
+          <img src="/img/bookmark.svg" width="50" alt="" />
         </button>
-        <button id="btn-create">
-          <img src="/img/book-plus.svg" width="70" alt="" />
+        <button class="nav__buttons" id="btn-create">
+          <img src="/img/book-plus.svg" width="60" alt="" />
         </button>
-        <button href="#">
-          <img src="/img/human-male-board.svg" width="70" alt="" />
+        <button class="nav__buttons" href="#">
+          <img src="/img/human-male-board.svg" width="60" alt="" />
+        </button>
+        <button
+          class="nav__buttons"
+          id="btn-darkmode"
+          onclick="darkFunctionBundle()"
+        >
+          <img src="/img/night-mode.svg" width="60" alt="" />
         </button>
       </nav>
     </footer>
+    <script src="/main.js"></script>
   </body>
 </html>

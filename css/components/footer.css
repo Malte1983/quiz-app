@@ -1,6 +1,11 @@
-footer {
-  background-color: rgba(0, 0, 255, 0.139);
+.footer {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 209, 67, 1) 0%,
+    rgba(255, 145, 83, 1) 90%
+  );
   margin-bottom: 10px;
+  height: 80px;
 }
 .footer__nav {
   display: flex;
@@ -8,4 +13,36 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.nav__buttons {
+  background-color: transparent;
+  border: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.nav__buttons:hover {
+  background-color: white;
+}
+
+.nav__buttons:active {
+  opacity: 0.6;
+  background-color: lightgray;
+}
+
+.nav__buttons:focus {
+  opacity: 0.6;
+  background-color: lightgray;
+}
+
+.footer__darkmode {
+  background-color: black;
+  background-image: none;
+}
+
+.nav__darkmode {
+  filter: invert(1);
 }

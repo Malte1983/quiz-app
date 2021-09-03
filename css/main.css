@@ -3,6 +3,7 @@
   grid-gap: 16px;
   padding: 16px;
   overflow: auto;
+  background-color: lightgrey;
 }
 
 .main.main--hidden {
@@ -26,4 +27,13 @@ main {
   border-radius: 8px;
   position: relative;
   background-color: rgba(95, 158, 160, 0.235);
+}
+
+.card__answer--hidden {
+  display: none;
+}
+
+.darkmodemain {
+  background-color: black;
+  color: white;
 }
