@@ -42,6 +42,8 @@ cardButton.forEach(function (show) {
   })
 })
 
+// sign bookmark
+
 const allbookElements = document.querySelectorAll('.card__bookmark')
 
 allbookElements.forEach(function (si) {
@@ -49,6 +51,8 @@ allbookElements.forEach(function (si) {
     si.classList.toggle('card__bookmark--unchecked')
   })
 })
+
+// store bookmarks only
 
 // clear all input-Elements in a Form
 

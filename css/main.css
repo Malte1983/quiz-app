@@ -2,7 +2,7 @@
   display: grid;
   grid-gap: 16px;
   padding: 16px;
-  overflow: auto;
+
   background-color: lightgrey;
 }
 

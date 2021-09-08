@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Malte1983/quiz-app#readme",
   "dependencies": {
+    "mongodb": "^4.1.1",
     "vite": "^2.5.1"
   }
 }

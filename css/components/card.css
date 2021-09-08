@@ -11,10 +11,6 @@
   background-color: #fbab7e;
 }
 
-.card__hidden {
-  display: none;
-}
-
 .card__bookmark {
   all: unset;
   background-image: url(/img/bookmarked.svg);
@@ -27,6 +23,10 @@
   padding: 0;
   opacity: 0.5;
   cursor: pointer;
+}
+
+.card__hidden {
+  display: none;
 }
 
 .card__bookmark--unchecked {
