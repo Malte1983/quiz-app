@@ -6,6 +6,96 @@ const indexPage = getEl('#questions')
 const bookmarkPage = getEl('#bookmarks')
 const createPage = getEl('#create')
 
+//----------------------------------------------------------------//
+function renderCard(cardData) {
+  const cardSection = document.createElement('section')
+  cardSection.classList.add('card')
+  document.getElementById('questions').appendChild(cardSection)
+  console.log(cardSection)
+
+  const buttonCardBookmark = document.createElement('button')
+  buttonCardBookmark.classList.add('card__bookmark')
+  cardSection.appendChild(buttonCardBookmark)
+
+  const titleQuestion = document.createElement('h2')
+  titleQuestion.classList.add('card__question')
+  titleQuestion.textContent = cardData.title
+  cardSection.appendChild(titleQuestion)
+
+  const questionQuestion = document.createElement('p')
+  questionQuestion.classList.add('question__ptag')
+  questionQuestion.textContent = cardData.question
+  cardSection.appendChild(questionQuestion)
+
+  const buttonShowIt = document.createElement('button')
+  buttonShowIt.classList.add('card__button')
+  buttonShowIt.textContent = 'Antwort anzeigen'
+  cardSection.appendChild(buttonShowIt)
+
+  const answerText = document.createElement('p')
+  answerText.classList.add('card__answer')
+  answerText.classList.add('card__answer--hidden')
+  answerText.textContent = cardData.answer
+  cardSection.appendChild(answerText)
+
+  const cardTags = document.createElement('ul')
+  cardTags.classList.add('tags')
+  cardSection.appendChild(cardTags)
+
+  cardData.tags.forEach(tag => {
+    const cardTag = document.createElement('li')
+    cardTag.classList.add('tags__item')
+    cardTag.textContent = tag
+    cardTags.appendChild(cardTag)
+  })
+}
+
+const CardDataExample = [
+  {
+    title: 'Frage',
+    question: 'Wie heisst die Hauptstadt von Finnland',
+    answer: 'Helsinki',
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['reisen', 'Erdkunde', 'Länder'],
+  },
+  {
+    title: 'Frage',
+    question: 'Welches ist das größte Raubtier der Welt',
+    answer: 'der Wal',
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['Tiere', 'Natur', 'Zoo'],
+  },
+  {
+    title: 'Frage',
+    question:
+      'Was findet man bei Autos meist in den Varianten gleichlaufend oder gegenläufig?',
+    answer: 'Scheibenwischer',
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['Kfz', 'Auto', 'Technik'],
+  },
+  {
+    title: 'Frage',
+    question:
+      'Wer muss beim Urlaub im Schwarzwald grundsätzlich die sogenannte Zwei-Meter-Regel beachten?',
+    answer: 'Mountainbiker',
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['Urlaub', 'Natur', 'Regeln'],
+  },
+]
+
+renderCard(CardDataExample[0])
+renderCard(CardDataExample[1])
+renderCard(CardDataExample[2])
+renderCard(CardDataExample[3])
+
+//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
 function getEl(selector) {
   const el = document.querySelector(selector)
   return el
